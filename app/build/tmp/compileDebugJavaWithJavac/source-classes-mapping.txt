@@ -1,0 +1,6 @@
+com/jfc/text2speech/Text2Speech.java
+ com.jfc.text2speech.Text2Speech
+ com.jfc.text2speech.Text2Speech$1
+ com.jfc.text2speech.Text2Speech$1$1
+com/jfc/text2speech/BuildConfig.java
+ com.jfc.text2speech.BuildConfig
