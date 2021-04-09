@@ -13,6 +13,8 @@ import java.util.Locale;
 public class Text2Speech extends Activity {
     static final String TAG = "jfc.Margaritaville";
 
+    private static final float SPEACH_RATE = 0.75f;
+    
     private Activity mActivity = this;
     private TextToSpeech mTts;
 
@@ -72,7 +74,9 @@ public class Text2Speech extends Activity {
         {
             text = "Content not available";
             mTts.speak(text, TextToSpeech.QUEUE_FLUSH, null);
-        }else
-            mTts.speak(text, TextToSpeech.QUEUE_FLUSH, null);
+        }else {
+	    mTts.setSpeechRate(SPEACH_RATE);
+	    mTts.speak(text, TextToSpeech.QUEUE_FLUSH, null);
+	}
     }
 }
