@@ -18,9 +18,9 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/theText"
-        android:layout_width="0dp"
-        android:layout_height="150dp"
+        android:id="@+id/theText1"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
         android:layout_margin="10dp"
         android:hint="Ok Google, please play Radio Margaritaville from SiriusXM"
         android:textAllCaps="false"
@@ -31,14 +31,40 @@
         app:layout_constraintTop_toBottomOf="@id/label" />
 
     <Button
-        android:id="@+id/speak_button"
+        android:id="@+id/speak_button1"
         android:layout_width="0dp"
         android:layout_height="50dp"
-        android:layout_margin="50dp"
+        android:layout_margin="30dp"
         android:text="Speak!"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/theText" />
+        app:layout_constraintTop_toBottomOf="@id/theText1" />
+
+    <EditText
+        android:id="@+id/theText2"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:hint="Ok Google, please play Holiday Traditions from SiriusXM"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/speak_button1" />
+
+    <Button
+        android:id="@+id/speak_button2"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_margin="30dp"
+        android:text="Speak!"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/theText2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 
