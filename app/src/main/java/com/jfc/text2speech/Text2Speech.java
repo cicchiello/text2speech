@@ -27,6 +27,9 @@ public class Text2Speech extends Activity {
 
         Button b2 = findViewById(R.id.speak_button2);
         b2.setOnClickListener(v -> buttonClickImp(findViewById(R.id.theText2)));
+
+        Button b3 = findViewById(R.id.speak_button3);
+        b3.setOnClickListener(v -> buttonClickImp(findViewById(R.id.theText3)));
     }
 
     @Override
